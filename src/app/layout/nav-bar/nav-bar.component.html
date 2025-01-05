@@ -1,0 +1,12 @@
+<p-toolbar>
+    <div class="p-toolbar-group-start">
+      <p-button (onClick)="sideBarComponent.toggle()" icon="pi pi-bars"></p-button>
+    </div>
+    <div class="p-toolbar-group-center">
+      <h1>Your Logo</h1>
+    </div>
+    <div class="p-toolbar-group-end">
+      <p-button [routerLink]="['auth', 'login']" icon="pi pi-sign-in"></p-button>
+    </div>
+</p-toolbar>
+<app-side-bar #sideBarComponent></app-side-bar>

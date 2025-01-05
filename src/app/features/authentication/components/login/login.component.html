@@ -1,0 +1,11 @@
+<div class="flex gap-2 flex-column align-items-center mt-2">
+  @if(user | async) {
+    <p-button (click)="logout()">Logout</p-button>
+    <p-button (click)="me()">ME</p-button>
+    <br>
+    {{ user | async | json }}
+  } @else {
+    <p-button (click)="login()">Login</p-button>
+  }
+</div>
+
