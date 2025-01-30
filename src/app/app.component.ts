@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProcessbarService } from './shared/services/processbar.service';
 
 @Component({
   selector: 'app-root',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+  constructor(
+    public processBarService: ProcessbarService
+  ) { }
 }

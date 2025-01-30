@@ -1,4 +1,4 @@
 <app-nav-bar></app-nav-bar>
-<p-progressBar mode="indeterminate" [style]="{ height: '6px', top: '-6px' }" />
+<p-progressBar mode="indeterminate" [style]="{ height: '6px', top: '-6px'}" [ngStyle]="(processBarService.isLoading$ | async) ? {opacity: 1} : {opacity: 0}" />
 
 <router-outlet />
